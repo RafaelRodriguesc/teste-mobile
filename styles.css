@@ -121,7 +121,7 @@ header {
   }
 }
 
-@media (min-width: 396px) {
+@media (min-width: 390px) {
   .mobile-header-content {
     display: flex;
     flex-direction: column;
