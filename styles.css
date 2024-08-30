@@ -2,12 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Melhor controle do layout */
-  font-family: "CustomFont", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: "Visby CF regular";
+  src: url(assets/Visby/VisbyCF-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby CF bold";
+  src: url(assets/Visby/VisbyCF-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby CF medium";
+  src: url(assets/Visby/VisbyCF-Medium.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Visby CF heavy";
+  src: url(assets/Visby/VisbyCF-Heavy.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 header {
@@ -83,13 +107,14 @@ header {
   }
 
   & .text {
+    font-family: "Visby CF medium";
     position: absolute; /* Torna o h1 posicionado de forma absoluta dentro do .mobile-header-content */
     z-index: 2; /* Garante que fique acima da imagem */
     width: 100%;
     /* border: 2px solid red; */
     color: white; /* Ajuste a cor do texto conforme necessário */
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
-    font-weight: 700;
+    font-size: 1.4rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: 900;
     line-height: 35px;
     display: flex;
     align-items: center;
@@ -100,7 +125,7 @@ header {
 
   & .line {
     background-color: black;
-    padding: 0px 5px;
+    padding: 0px 10px;
     /* display: inline-block; */
   }
 
@@ -130,6 +155,11 @@ header {
 
     & .text {
       top: 44%;
+      font-size: 1.7rem;
+    }
+
+    & .line {
+      padding: 0px 5px;
     }
   }
 }
