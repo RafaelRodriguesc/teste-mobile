@@ -120,3 +120,17 @@ header {
     cursor: pointer;
   }
 }
+
+@media (min-width: 396px) {
+  .mobile-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6.25rem;
+
+    & .text {
+      top: 44%;
+      font-size: 1.6rem;
+    }
+  }
+}
