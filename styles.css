@@ -134,7 +134,7 @@ a:hover {
 .mobile-header-content img {
   /* border: 2px solid red; */
   width: 100%;
-  height: 80%;
+  height: 85%;
   padding: 1rem;
   object-fit: contain; /* Mantém a proporção da imagem e a ajusta dentro do container */
   display: block; /* Remove espaço abaixo da imagem */
@@ -217,19 +217,10 @@ p {
   text-align: left;
 }
 
-/* Para viewports menores que 352px */
-/* @media (max-width: 353px) {
-  .line {
-    font-size: 1.2rem;
-    padding: 0rem 0.2rem;
-  }
-} */
-
 /* Para viewports entre 352px e 390px */
 @media (min-width: 353px) and (max-width: 391px) {
   .line {
     font-size: 1.5rem;
-    padding: 0rem 0.5rem;
   }
 }
 
@@ -237,7 +228,6 @@ p {
 @media (min-width: 391px) and (max-width: 428px) {
   .line {
     font-size: 1.6rem;
-    padding: 0rem 0.6rem;
   }
 }
 
@@ -245,6 +235,5 @@ p {
 @media (min-width: 429px) {
   .line {
     font-size: 1.7rem;
-    padding: 0rem 0.7rem;
   }
 }
