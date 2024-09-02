@@ -169,7 +169,7 @@ header {
   width: 100%;
 }
 
-& button {
+button {
   font-family: "Visby CF bold";
   color: white;
   font-size: 1rem;
