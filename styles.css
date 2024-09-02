@@ -217,30 +217,34 @@ p {
   text-align: left;
 }
 
-@media (max-width: 352px) {
+/* Para viewports menores que 352px */
+@media (max-width: 353px) {
   .line {
     font-size: 1.3rem;
     padding: 0rem 0.3rem;
   }
 }
 
-@media (min-width: 390px) {
-  .mobile-header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* gap: 6.25rem; */
-  }
-
+/* Para viewports entre 352px e 390px */
+@media (min-width: 354px) and (max-width: 391px) {
   .line {
-    padding: 0rem 0.6rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
   }
 }
 
+/* Para viewports entre 390px e 429px */
+@media (min-width: 391px) and (max-width: 428px) {
+  .line {
+    font-size: 1.6rem;
+    padding: 0rem 0.7rem;
+  }
+}
+
+/* Para viewports maiores que 429px */
 @media (min-width: 429px) {
   .line {
-    padding: 0rem 0.8rem;
     font-size: 1.8rem;
+    padding: 0rem 0.8rem;
   }
 }
