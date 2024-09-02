@@ -139,7 +139,7 @@ header {
   display: block; /* Remove espaço abaixo da imagem */
 }
 
-.mobile-header-content .text {
+.text {
   font-family: "Visby CF medium";
   position: absolute; /* Torna o h1 posicionado de forma absoluta dentro do .mobile-header-content */
   z-index: 2; /* Garante que fique acima da imagem */
@@ -158,13 +158,13 @@ header {
   top: 49%;
 }
 
-.mobile-header-content .line {
+.line {
   background-color: black;
   padding: 0px 5px;
   /* display: inline-block; */
 }
 
-.mobile-header-content .btn-mobile {
+.btn-mobile {
   /* border: 2px solid red; */
   width: 100%;
 }
@@ -190,18 +190,18 @@ header {
     gap: 1rem;
   }
 
-  .base-about-content h2 {
+  h2 {
     color: white;
     font-family: "Visby CF regular";
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .base-about-content .bold-highlight {
+  .bold-highlight {
     font-family: "Visby CF bold";
   }
 
-  .base-about-content p {
+  p {
     color: white;
     font-family: "Visby CF regular";
     font-size: 1.2rem;
@@ -222,11 +222,11 @@ header {
     justify-content: center;
     /* gap: 6.25rem; */
   }
-  .mobile-header-content .text {
+  .text {
     font-size: 1.7rem;
   }
 
-  .mobile-header-content .line {
+  .line {
     padding: 0px 5px;
   }
 }
