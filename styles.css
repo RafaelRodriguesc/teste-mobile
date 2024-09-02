@@ -190,18 +190,18 @@ header {
     gap: 1rem;
   }
 
-  .base-aboout-content h2 {
+  .base-about-content h2 {
     color: white;
     font-family: "Visby CF regular";
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .base-aboout-content .bold-highlight {
+  .base-about-content .bold-highlight {
     font-family: "Visby CF bold";
   }
 
-  .base-aboout-content p {
+  .base-about-content p {
     color: white;
     font-family: "Visby CF regular";
     font-size: 1.2rem;
