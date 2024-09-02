@@ -134,7 +134,7 @@ a:hover {
 .mobile-header-content img {
   /* border: 2px solid red; */
   width: 100%;
-  height: 85%;
+  height: 80%;
   padding: 1rem;
   object-fit: contain; /* Mantém a proporção da imagem e a ajusta dentro do container */
   display: block; /* Remove espaço abaixo da imagem */
