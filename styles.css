@@ -79,7 +79,8 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-& .navbar {
+
+.navbar {
   background-color: rgb(184, 182, 182);
 }
 
@@ -194,17 +195,24 @@ h2 {
   color: white;
   font-family: "Visby CF regular";
   font-size: 1.5rem;
+  line-height: 2.34rem;
+  letter-spacing: 0.05em;
+  font-weight: 900;
   text-align: center;
 }
 
 .bold-highlight {
   font-family: "Visby CF bold";
+  font-weight: 700;
 }
 
 p {
   color: white;
   font-family: "Visby CF regular";
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.95rem;
+  letter-spacing: 0.07em;
+  font-weight: 500;
   text-align: left;
 }
 
