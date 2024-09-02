@@ -78,31 +78,31 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+& .navbar {
+  background-color: rgb(184, 182, 182);
+}
 
-  & .navbar {
-    background-color: rgb(184, 182, 182);
-  }
-  & ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  & li {
-    list-style: none;
-  }
+ul li {
+  list-style: none;
+}
 
-  & a {
-    text-decoration: none;
-    color: white;
-    font-family: "Visby CF regular";
-    font-weight: 900;
-  }
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Visby CF regular";
+  font-weight: 900;
+}
 
-  & a:hover {
-    color: #0099ff;
-  }
+a:hover {
+  color: #0099ff;
 }
 
 .mobile-base-header {
@@ -145,15 +145,10 @@ header {
   z-index: 2; /* Garante que fique acima da imagem */
   width: 100%;
   /* border: 2px solid red; */
-  color: white; /* Ajuste a cor do texto conforme necessário */
-  font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
-  font-weight: 900;
-  line-height: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-
   gap: 5px;
   top: 49%;
 }
@@ -161,6 +156,10 @@ header {
 .line {
   background-color: black;
   padding: 0px 5px;
+  color: white; /* Ajuste a cor do texto conforme necessário */
+  font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+  font-weight: 900;
+  line-height: 35px;
   /* display: inline-block; */
 }
 
