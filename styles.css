@@ -67,9 +67,10 @@ header {
 }
 
 .mobile-top-header {
-  position: absolute;
-  top: 0; /* Ajuste para o topo do header */
-  left: 0; /* Ajuste para a esquerda do header */
+  position: fixed;
+  background-image: url("assets/home-background\ 1.png");
+  background-position: top;
+  padding: 1rem;
   /* border: 2px solid red; */
   height: 4rem;
   width: 100%;
@@ -81,24 +82,41 @@ header {
 }
 
 .navbar {
-  background-color: rgb(184, 182, 182);
+  display: flex;
+  height: 1rem;
 }
 
-ul {
+.menu {
+  display: none;
+  position: absolute;
+  right: 0rem;
+  top: 60px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu.open {
+  display: block;
+  height: 260px;
+}
+
+.menu li {
+  padding: 0.7rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-ul li {
   list-style: none;
 }
 
-ul li a {
+a {
   text-decoration: none;
   color: white;
   font-family: "Visby CF regular";
+  font-size: 1.5rem;
   font-weight: 900;
 }
 

@@ -8,11 +8,10 @@
   </head>
   <body>
     <header>
-      <img class="bg-header" src="assets/home-background 1.png" alt="" />
       <div class="mobile-layout">
         <div class="mobile-top-header">
           <svg
-            width="152"
+            width="120"
             height="20"
             viewBox="0 0 253 43"
             fill="none"
@@ -56,14 +55,46 @@
             />
           </svg>
           <div class="navbar">
-            <ul>
+            <div class="menu open">
               <li><a href="#">Home</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Projetos</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Contato</a></li>
-            </ul>
+            </div>
+            <div class="toggle-menu">
+              <svg
+                class="toggle-icon"
+                width="44"
+                height="20"
+                viewBox="0 0 44 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 2H42"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2 12H42"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2 22H42"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
           </div>
+        </div>
+        <div class="bg-header">
+          <img class="bg-header" src="assets/home-background 1.png" alt="" />
         </div>
         <div class="mobile-base-header">
           <div class="mobile-header-content">
@@ -111,5 +142,17 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-menu");
+      const toggleBtnIcon = document.querySelector(".toggle-icon");
+      const dropDownMenu = document.querySelector(".menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen ? "toggle-icon" : "toggle-icon";
+      };
+    </script>
   </body>
 </html>
