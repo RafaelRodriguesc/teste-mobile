@@ -240,7 +240,7 @@ p {
   font-family: "Visby CF regular";
   font-size: 1.25rem;
   line-height: 1.95rem;
-  letter-spacing: 0.07em;
+  /* letter-spacing: 0.05em; */
   font-weight: 500;
   text-align: left;
 }
