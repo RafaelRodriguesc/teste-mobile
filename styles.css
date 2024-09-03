@@ -92,8 +92,8 @@ header {
   right: 0rem;
   top: 60px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.93);
+  /* backdrop-filter: blur(10px); */
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -114,7 +114,7 @@ header {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #042285;
   font-family: "Visby CF regular";
   font-size: 1.5rem;
   font-weight: 900;
