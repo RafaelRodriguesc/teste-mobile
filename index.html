@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="mobile-layout">
         <div class="mobile-top-header">
           <svg
@@ -55,12 +55,12 @@
             />
           </svg>
           <div class="navbar">
-            <div class="menu open">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contato</a></li>
+            <div class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contato</a></li>
             </div>
             <div class="toggle-menu">
               <svg
@@ -153,6 +153,28 @@
         const isOpen = dropDownMenu.classList.contains("open");
         toggleBtnIcon.classList = isOpen ? "toggle-icon" : "toggle-icon";
       };
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.menu a[href^="#"]').on("click", function (e) {
+        e.preventDefault();
+        var id = $(this).attr("href"),
+          targetOffset = $(id).offset().top;
+
+        $("html, body").animate(
+          {
+            scrollTop: targetOffset,
+          },
+          200,
+          function () {
+            $(".menu").removeClass("open");
+          }
+        );
+      });
     </script>
   </body>
 </html>
