@@ -616,7 +616,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   /* border: 2px solid red; */
-  padding: 2px 16px;
+  padding: 1px 16px;
   /* color: white; */
   /* text-align: center; */
   font-size: 12px;
@@ -624,7 +624,7 @@ footer {
 
 .develope-by {
   font-family: "Visby CF bold";
-  padding: 1px;
+  /* padding: 1px; */
   /* text-align: center; */
   font-size: 12px;
 }
