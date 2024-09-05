@@ -117,7 +117,7 @@ header {
   width: 100%;
 }
 
-a {
+.menu-item {
   text-decoration: none;
   color: white;
   font-family: "Visby CF regular";
@@ -448,6 +448,7 @@ h5 {
 
 .questions-field {
   width: 100%;
+  /* margin-bottom: 1rem; */
   /* border: 2px solid orange; */
 }
 
@@ -509,6 +510,118 @@ h5 {
 /* Muda a cor do ícone */
 #questions input[type="checkbox"]:checked + label span svg path {
   stroke: #0099ff; /* Aplica a cor azul ao ícone */
+}
+
+.faq-contact {
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Visby CF regular";
+  font-size: 1.5rem;
+  line-height: 2.34rem;
+  /* letter-spacing: 0.05em; */
+  font-weight: 500;
+  text-align: center;
+}
+
+footer {
+  background-color: #0099ff;
+  padding: 1rem 0;
+}
+
+.base-footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-logo-msg {
+  color: white;
+  font-family: "Visby CF regular";
+  font-size: 0.875rem;
+  /* text-align: center; */
+}
+
+.footer-social-media {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 1rem;
+  /* border: 2px solid red; */
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+}
+
+.footer-icon svg {
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
+  /* border: 2px solid red; */
+}
+
+.footer-nav-field {
+  /* border: 2px solid green; */
+  color: white;
+}
+.footer-nav-field ul {
+  list-style: none;
+}
+
+.footer-nav-item {
+  font-family: "Visby CF regular";
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid purple; */
+}
+
+.footer-contact-item {
+  font-family: "Visby CF regular";
+  color: white;
+}
+
+.bottom-footer {
+  font-family: "Visby CF bold";
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+.develope-by {
+  font-family: "Visby CF bold";
+  padding: 1px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.developer-name {
+  text-decoration: none;
+  color: #0099ff;
 }
 
 /* Para viewports entre 352px e 390px */
