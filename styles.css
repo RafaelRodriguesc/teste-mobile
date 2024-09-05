@@ -127,11 +127,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
+  padding: 1rem;
   /* border: 2px solid blueviolet; */
 }
 
-a:hover {
+.menu-item:hover {
   color: #0099ff;
   background-color: white;
   border-radius: 10px;
@@ -414,7 +414,7 @@ h4 {
 }
 
 .adopters .item {
-  height: 60px; /* Altura dos itens */
+  height: 40px; /* Altura dos itens */
   /* border: 2px solid white; */
   display: flex;
   align-items: center;
@@ -429,9 +429,6 @@ img {
 
 #faq {
   padding: 2rem 0;
-}
-
-.base-faq-content {
 }
 
 h5 {
@@ -452,8 +449,6 @@ h5 {
   /* border: 2px solid orange; */
 }
 
-#questions {
-}
 #questions li {
   list-style: none;
   width: 100%;
