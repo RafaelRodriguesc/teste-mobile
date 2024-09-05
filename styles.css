@@ -414,7 +414,7 @@ h4 {
 }
 
 .adopters .item {
-  height: 40px; /* Altura dos itens */
+  height: 50px; /* Altura dos itens */
   /* border: 2px solid white; */
   display: flex;
   align-items: center;
