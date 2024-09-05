@@ -264,7 +264,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .base-projects-content {
@@ -428,7 +428,7 @@ img {
 }
 
 #faq {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .base-faq-content {
@@ -513,7 +513,7 @@ h5 {
 }
 
 .faq-contact {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -528,7 +528,7 @@ h5 {
 
 footer {
   background-color: #0099ff;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .base-footer-content {
