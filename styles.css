@@ -43,12 +43,13 @@ header {
 
 .container {
   width: 100%;
-  height: 100%; /* Garante que o container também ocupe toda a altura */
-  padding: 1rem;
-  display: flex;
+  /* border: 2px solid red; */
+  /* height: 100%; */
+  padding: 0 1rem;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .bg-header {
@@ -61,16 +62,19 @@ header {
   z-index: 1;
 }
 
+/*Estilização do home para dispositivis moveis*/
+
 .mobile-layout {
   display: flex;
   flex-direction: column;
+  display: inline;
 }
 
 .mobile-top-header {
   position: fixed;
   background-image: url("assets/home-background\ 1.png");
   background-position: top;
-  padding: 1rem;
+  padding: 0 1rem;
   /* border: 2px solid red; */
   height: 4rem;
   width: 100%;
@@ -139,7 +143,7 @@ header {
 
 .mobile-base-header {
   position: absolute;
-  padding: 1rem;
+  padding: 0 1rem;
   /* top: 4rem;  */
   left: 0;
   width: 100%; /* Ocupa toda a largura do header */
@@ -173,6 +177,7 @@ header {
 
 .text {
   font-family: "Visby CF medium";
+  /* background-color: black; */
   position: absolute; /* Torna o h1 posicionado de forma absoluta dentro do .mobile-header-content */
   z-index: 2; /* Garante que fique acima da imagem */
   width: 100%;
@@ -187,11 +192,14 @@ header {
 
 .line {
   background-color: black;
-  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px 0px 5px;
   color: white; /* Ajuste a cor do texto conforme necessário */
   font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
   font-weight: 900;
-  line-height: 35px;
+  /* line-height: 35px; */
   /* display: inline-block; */
 }
 
@@ -222,6 +230,122 @@ header {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+}
+
+/*Estilização do home para desktops*/
+
+.desktop-layout {
+  display: none;
+}
+
+.desktop-bg-header {
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bg-mask {
+  position: absolute;
+  object-fit: cover;
+  left: 60px;
+  z-index: 2;
+}
+
+.desk-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.desk-navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  /* border: 2px solid white; */
+  width: 100%;
+  margin-top: 27px;
+}
+
+.desk-logo-scieduc {
+  /* border: 2px solid yellow; */
+}
+
+.desk-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* border: 2px solid yellow; */
+}
+
+.desk-menu li {
+  list-style: none;
+}
+
+.desk-menu-item {
+  text-decoration: none;
+  color: white;
+  font-family: "Visby CF regular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  position: relative; /* Para posicionar a borda de pseudo-elemento */
+}
+
+#activ {
+  font-family: "Visby CF bold";
+}
+
+#activ::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Ajuste a posição conforme necessário */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura da borda */
+  background-color: #0099ff; /* Cor da borda */
+}
+
+.desk-menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0099ff;
+  transition: width 0.3s ease-in-out; /* Transição suave */
+}
+
+.desk-menu-item:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  font-family: "Visby CF bold";
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  /* border: 2px solid white; */
+  position: relative;
+  z-index: 3;
+  top: 150px;
+}
+
+.astronaut-img {
+  background-image: url("assets/astronauta.png");
+  height: 606px;
+  width: 628px;
+  /* border: 2px solid yellow; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  /* top: ;
+  right: ; */
+  left: 600px;
+  bottom: 200px;
+  z-index: 3;
 }
 
 #about {
@@ -313,11 +437,7 @@ h3 {
 }
 
 .slide-content {
-  font-family: "Visby CF regular";
   height: 9.375rem;
-  font-size: 1rem;
-  line-height: 1.95rem;
-  font-weight: 500;
   padding: 1rem;
   color: white;
   border-radius: 10px;
@@ -329,6 +449,10 @@ h3 {
 }
 
 #project-text {
+  font-family: "Visby CF regular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
   display: flex;
   text-align: left;
   justify-content: center;
@@ -646,6 +770,52 @@ footer {
 /* Para viewports maiores que 429px */
 @media (min-width: 429px) {
   .line {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+  }
+
+  @media (min-width: 451px) {
+    .line {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mobile-layout {
+      display: none;
+    }
+    .desktop-layout {
+      display: inline;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      /* position: relative;
+      z-index: 4;
+      border: 2px solid red; */
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      /* position: relative;
+      z-index: 4;
+      border: 2px solid red; */
+    }
+
+    .bg-mask {
+      position: absolute;
+      object-fit: cover;
+      left: 0px;
+      z-index: 2;
+    }
+
+    .astronaut-img {
+      left: 600px;
+      bottom: 220px;
+      z-index: 3;
+    }
   }
 }
