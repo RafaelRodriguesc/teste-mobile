@@ -964,5 +964,12 @@ footer {
       justify-content: center;
       gap: 2rem;
     }
+
+    .bottom-footer {
+      display: flex;
+      flex-direction: row;
+      max-width: 1080px;
+      margin: auto;
+    }
   }
 }
