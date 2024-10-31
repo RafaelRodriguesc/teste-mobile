@@ -246,10 +246,11 @@ header {
 
 .bg-mask {
   position: absolute;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   object-fit: cover;
-  width: 1300px;
-  left: 220px;
+  /* height: 800px; */
+  /* right: 50px; */
+  /* width: 1320px; */
   z-index: 2;
 }
 
